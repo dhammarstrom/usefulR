@@ -1,0 +1,9 @@
+Package: usefulR
+Type: Package
+Title: Contains useful functions for me
+Version: 1.0
+Date: 2015-08-06
+Author: Daniel Hamarström
+Maintainer: Daniel <daniel.hammarstrom@hil.no>
+Description: Read nanodrop data (so far).
+License: What license is it under?
