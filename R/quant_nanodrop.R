@@ -18,8 +18,8 @@ quant_nanodrop<-function(data){
       
       results<-data.frame(sample=rep(NA, length(samples)),
                           concentration=rep(NA, length(samples)),
-                          ratio.260_230=rep(NA, length(samples)),
                           ratio.260_280=rep(NA, length(samples)),
+                          ratio.260_230=rep(NA, length(samples)),
                           time=.POSIXct(character(length(samples))))   
       
 
