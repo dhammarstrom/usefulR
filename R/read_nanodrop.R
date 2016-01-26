@@ -14,11 +14,10 @@ read_nanodrop<-function(file){
             colnames(spectrum[[i]])[1]<-"wavelength"
             colnames(spectrum[[i]])[2]<-"absorbance"
             colnames(spectrum[[i]])[3]<-"sample"
-            spectrum[[i]][,3]<-spectrum[[i]][1,3]
+            spectrum[[i]][,3]<-as.character(spectrum[[i]][1,3])
             spectrum[[i]][,4]<-spectrum[[i]][1,4]
       }
       spectrum<-dplyr::rbind_all(spectrum)
       spectrum
 }
 
-      

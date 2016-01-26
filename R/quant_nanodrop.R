@@ -11,7 +11,7 @@
 
 quant_nanodrop<-function(data){
       data<-data.frame(data)
-      data$sampleID<-paste(data[,3], data[,4], sep="_")
+      data$sampleID<-apply(data[,c(3,4)],1, paste, collapse=" ")
       
       
       samples<-unique(data$sampleID)
