@@ -17,7 +17,7 @@ read_nanodrop<-function(file){
             spectrum[[i]][,3]<-as.character(spectrum[[i]][1,3])
             spectrum[[i]][,4]<-spectrum[[i]][1,4]
       }
-      spectrum<-dplyr::rbind_all(spectrum)
+      spectrum<-dplyr::bind_rows(spectrum)
       spectrum
 }
 
